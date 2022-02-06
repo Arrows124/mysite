@@ -12,12 +12,8 @@ google-auth==2.6.0
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 grpcio==1.43.0
-h5py==3.6.0
 idna==3.3
 importlib-metadata==4.10.1
-keras==2.8.0
-Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.2
 libclang==13.0.0
 Markdown==3.3.6
 numpy==1.22.2
@@ -36,11 +32,6 @@ rsa==4.8
 scipy==1.7.3
 six==1.16.0
 sqlparse==0.4.2
-tensorboard==2.8.0
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.1
-tensorflow==2.8.0
-tensorflow-io-gcs-filesystem==0.24.0
 termcolor==1.1.0
 tf-estimator-nightly==2.8.0.dev2021122109
 typing_extensions==4.0.1
