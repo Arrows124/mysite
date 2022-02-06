@@ -1,0 +1,26 @@
+{% extends 'app/layout.html' %}
+
+{% block content %}
+<h3 class="mb-4 text-white border-bottom">Profile</h3>
+<div class="mb-5 text-white">
+    <div class="row">
+        <div class="col-md-8">
+            <p>{{ profile_data.introduction|linebreaksbr }}</p>
+        </div>
+        <div class="col-mb-4">
+            <div class="card text-center px-5 py-4">
+                <div class="avatar mb-3">
+                    <img src="{{ profile_data.subimage.url }}" alt="" class="card-img-top rounded-circle">
+                </div>
+                <h5 class="font-weight-border text-dark">{{ profile_data.name }}</h5>
+                <p class="mb-3 small text-center text-dark">{{ profile_data.school }}</p>
+                <div class="d-flex justify-content-around text-dark">
+                    <p>Github
+                        <a href="{{ profile_data.github }}" target="_blank">{{ profile_data.github }}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

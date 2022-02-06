@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;   
+}
+
+.navbar-nav {
+    flex-direction: row!important;
+}
+
+.nav-color {
+    color: white;
+}
+
+.nav-color:hover {
+    color: orange;
+}
+
+.nav-color::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: orange;
+    margin-top: 6px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-color:hover:after {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.top img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.overlay {
+    position: absolute;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}

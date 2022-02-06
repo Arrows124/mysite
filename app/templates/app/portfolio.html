@@ -1,0 +1,33 @@
+{% extends 'app/layout.html' %}
+
+{% block content %}
+<h3 class="mb-4 text-white border-bottom">Portfolio</h3>
+{% for work in work_data %}
+<h3 class="p-3 mb-4 text-white">{{ work.work_title }}</h3>
+<div class="text-center">{{ work.youtube_html | safe}}</div>
+<div class="text-white">
+    <div class="col-sm-4 mb-4">
+        <h4 class="mb-3">INFOMATION</h4>
+        <p>
+            <h5 class="font-weight-border border-bottom">DISCRIPTION</h5>
+            <p class="text-nowrap text-justfiy">{{ work.discription| linebreaksbr }}</p>
+        </p>
+        {% if work.details %}
+        <p>
+            <h5 class="font-weight-border border-bottom">URL</h5>
+            <a href="{{ work.details }}">{{ work.details }}</a>
+        </p>
+        {% endif %}
+        <p>
+            <h5 class="font-weight-border border-bottom">SKILLS</h5>
+            <p class="text-nowrap">{{ work.use_language }}</p>
+        </p>
+        <p>
+            <h5 class="font-weight-border border-bottom">Github</h5>
+            <p class="text-nowrap">{{ work.github }}</p>
+        </p>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

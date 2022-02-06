@@ -1,0 +1,12 @@
+{% extends 'app/layout.html' %}
+
+{% block content %}
+<div class="card top d-flex flex-column justify-content-end mb-4">
+    <img src="{{ profile_data.topimage.url }}" class="rounded float-left" alt="Responsive image">
+    <div class="overlay text-white p-5">
+        <h1 class="title">{{ profile_data.title }}</h1>
+        <h5 class="subtitle">{{ profile_data.subtitle }}</h5>
+    </div>
+</div>
+<p class="p-3 mb-4 text-white">大学1年の時、一人旅で訪れたパリの写真です</p>
+{% endblock %}
